@@ -29,7 +29,6 @@ export const ourFileRouter = {
                         width: width || 500,
                     },
                 })
-
                 return { configId: configuration.id }
 
             } else {
@@ -41,8 +40,6 @@ export const ourFileRouter = {
                         croppedImageUrl: file.url,
                     },
                 })
-
-
                 return { configId: (await updatedConfiguration).id }
             }
         }),
